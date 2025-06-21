@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | CONDOBLACK RICH</title>
+
+  <!-- Estilos e fontes -->
+  <link rel="stylesheet" href="css/internas.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="logo.jpg" type="image/logo.png">
+
+  <!-- Script de som e modo claro -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const audio = new Audio('sons/intro.mp3');
+      audio.volume = 0.3;
+      audio.play().catch(() => {});
+
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (!prefersDark) {
+        document.body.classList.add('modo-claro');
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="hero fade-in">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Blog da Condor</h1>
+      <p class="hero-subtitle">Ideias, vivências e vibes direto da mente da artista.</p>
+    </div>
+  </header>
+
+  <!-- Navegação -->
+  <nav class="main-nav fade-in delay-1">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="musicas.html">Músicas</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo do Blog -->
+  <section class="conteudo fade-in delay-2">
+    <h2>Últimas Postagens</h2>
+
+    <article class="blog-post">
+      <h3>🎤 O Processo Criativo por Trás do Som</h3>
+      <p>
+        Descubra como CONDOBLACK RICH transforma experiências de vida em letras poderosas e beats intensos.
+        Suas rimas não são só música, são vivência.
+        <a href="https://www.facebook.com/condoblack.rich" target="_blank">Leia mais</a>
+      </p>
+    </article>
+
+    <article class="blog-post">
+      <h3>🌍 Como o Trap Angolano Está Conquistando Espaço</h3>
+      <p>
+        Uma reflexão sobre o crescimento do movimento trap na cena local e o papel da CONDOBLACK RICH nisso tudo.
+        <a href="#">Leia mais</a>
+      </p>
+    </article>
+
+    <article class="blog-post">
+      <h3>🔥 Lançamento Exclusivo: "AMAZING Studio"</h3>
+      <p>
+        Conheça os bastidores do novo som que está dominando os fones de ouvido nas ruas.
+        <a href="https://amazing-studio.netlify.app/" target="_blank">Ouça agora</a>
+      </p>
+    </article>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="fade-in delay-3">
+    <p>&copy; 2025 CONDOBLACK RICH. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

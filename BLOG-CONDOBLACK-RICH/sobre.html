@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | CONDOBLACK RICH</title>
+
+  <!-- Estilos e fontes -->
+  <link rel="stylesheet" href="css/internas.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="logo.jpg" type="image/logo.png">
+
+  <!-- Script: som e modo claro -->
+  <script>
+    // Som na entrada
+    window.addEventListener('DOMContentLoaded', () => {
+      const audio = new Audio('sons/intro.mp3');
+      audio.volume = 0.3;
+      audio.play().catch(() => {});
+    });
+
+    // Modo escuro/claro automático
+    window.addEventListener('DOMContentLoaded', () => {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (!prefersDark) {
+        document.body.classList.add('modo-claro');
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="hero fade-in">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Sobre CONDOBLACK RICH</h1>
+      <p class="hero-subtitle">Trap não é só música — é identidade.</p>
+    </div>
+  </header>
+
+  <!-- Navegação -->
+  <nav class="main-nav fade-in delay-1">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="musicas.html">Músicas</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Seção biografia -->
+  <section class="conteudo fade-in delay-2">
+    <div class="bio-container">
+      <abbr title="Toque para ver melhor a imagem">
+        <a href="imagens/1737891557600.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="imagens/1737891557600.jpg" alt="CONDOBLACK RICH" class="bio-img">
+        </a>
+      </abbr>
+
+      <div class="bio-texto">
+        <h2>Quem é CONDOBLACK RICH?</h2>
+        <p>
+          CONDOBLACK RICH é um artista de trap angolano que vem conquistando espaço com sua sonoridade crua,
+          letras profundas e presença marcante. Sua música é espelho da realidade urbana e da força da juventude periférica.
+        </p>
+
+        <p>
+          Com beats pesados e um estilo autêntico, CONDOBLACK RICH transforma
+          suas experiências em arte, misturando emoção com atitude em cada faixa lançada.
+        </p>
+
+        <p>
+          Graças à masterização do Studio Amazing, as músicas do CONDOBLACK RICH tocam nas almas das pessoas
+          e mexem com os seus duplos sentidos.
+        </p>
+
+        <blockquote>
+          "Minha música é minha liberdade. Trap é meu idioma."
+          — <strong style="color: #e91e63;">CONDOBLACK RICH</strong>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="fade-in delay-3">
+    <p>&copy; 2025 CONDOBLACK RICH. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
